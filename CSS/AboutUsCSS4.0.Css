@@ -1,0 +1,212 @@
+/* Define all colors in :root */
+:root {
+    --background-color-light: #f0f4f8;
+    --background-color-dark: #1f4172; /* Light pastel blue */
+    --header-background: aliceblue;
+    --text-color: #333333;
+    --nav-hover-color: purple;
+    --footer-background: #e0e4e8; /* Brighter gray-blue */
+    --footer-text-color: #333333;
+    --sidebar-background: rgba(125, 178, 224, 0.2);
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --btn-color: #007bff;
+    --btn-hover-color: purple;
+}
+
+/* Base styling for main content */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-dark);
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Branch section styling */
+.branch {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.branch-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px var(--box-shadow);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+.branch_Img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+}
+
+.about_image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.branch-details {
+    padding: 10px;
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+
+.branch-contact {
+    height: 100%;
+    padding: 15px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.btn_appointment {
+    margin-top: 15px;
+    background-color: var(--btn-color);
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn_appointment:hover {
+    transform: scale(1.1);
+    background-color: var(--btn-hover-color);
+}
+
+h2 {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Base styling for the table */
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--box-shadow);
+    overflow-x: auto; /* Allows horizontal scrolling */
+    display: block; /* Ensures table is block-level for overflow handling */
+}
+
+th {
+    background-color: #9aa4b3; /* Header color */
+    color: #ffffff;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    font-size: 1rem;
+    color: #555555;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive styles */
+@media (max-width: 1023px) {
+    .service-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 767px) {
+    table {
+        font-size: 0.8rem; /* Smaller text on small screens */
+    }
+
+    th, td {
+        padding: 10px; /* Reduced padding for better fit */
+    }
+
+    .service-card {
+        flex: 1 1 100%; /* Full-width cards on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .branch-content {
+        padding: 7px;
+        border-radius: 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+
+    .branch_Img {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+
+    .branch-details {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
+    .branch-contact {
+        display: none;
+    }
+
+    .about_image {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.7rem; /* Even smaller text on very small screens */
+    }
+
+    table thead {
+        display: none; /* Hide table headers on very small screens */
+    }
+
+    table, table tbody, table tr, table td {
+        display: block; /* Make table elements block-level for better stacking */
+        width: 100%; /* Full width for all table elements */
+    }
+
+    table td {
+        text-align: right; /* Align text to the right for better readability */
+        position: relative; /* Position relative for pseudo-elements */
+    }
+}

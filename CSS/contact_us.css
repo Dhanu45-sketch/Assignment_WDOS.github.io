@@ -1,0 +1,85 @@
+:root {
+    --background-color-light: #f0f4f8;
+    --background-color-dark: #1f4172; /* Light pastel blue */
+    --header-background: aliceblue;
+    --text-color: #333333;
+    --nav-hover-color: purple;
+    --footer-background: #e0e4e8; /* Brighter gray-blue */
+    --footer-text-color: #333333;
+    --sidebar-background: rgba(125, 178, 224, 0.2);
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --btn-color: #007bff;
+    --btn-hover-color: purple;
+    --box-background: #ffffff;
+    --complaint-color: #ff6347;
+    --contact-title-color: var(--btn-color);
+    --hover-transform: translateY(-7px);
+}
+
+/* Container styling */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Image styling */
+.img_contact {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.img_contact:hover {
+    transform: var(--hover-transform);
+}
+
+/* Contact box styling */
+.contact-box {
+    background-color: var(--box-background);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px var(--box-shadow);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.contact-box:hover {
+    transform: var(--hover-transform);
+}
+
+.contact-box h2,
+.contact-box h3 {
+    color: var(--contact-title-color);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Paragraph styling */
+.contact-box p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Complaints box styling */
+.complaints-box h3 {
+    color: var(--complaint-color);
+}
+
+/* Link styling */
+a {
+    color: var(--btn-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

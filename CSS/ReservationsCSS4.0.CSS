@@ -1,0 +1,120 @@
+:root {
+    --background-color-light: #f0f4f8;
+    --background-color-dark: #1f4172; /* Light pastel blue */
+    --header-background: aliceblue;
+    --text-color: #333333;
+    --nav-hover-color: purple;
+    --footer-background: #e0e4e8; /* Brighter gray-blue */
+    --footer-text-color: #333333;
+    --sidebar-background: rgba(125, 178, 224, 0.2);
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.booking-page {
+    padding: 30px;
+    margin: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--background-color-dark); /* Light background */
+}
+
+.booking-form {
+    margin-top: -20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px var(--box-shadow); /* Box shadow using root variable */
+}
+
+.img_booking {
+    border-radius: 7px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.booking-page h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--text-color); /* Text color from root */
+}
+
+.booking-page p {
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color); /* Text color from root */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    transform: scale(1.1);
+    background-color: var(--nav-hover-color); /* Using the hover color variable */
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+    .booking-page {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .booking-page {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .booking-page {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-page {
+        padding: 15px;
+    }
+
+    .form-group button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

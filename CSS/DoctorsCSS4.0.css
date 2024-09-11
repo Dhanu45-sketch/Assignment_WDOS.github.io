@@ -1,0 +1,141 @@
+:root {
+    --background-color-light: #f0f4f8;
+    --background-color-dark: #1f4172; /* Light pastel blue */
+    --header-background: aliceblue;
+    --text-color: #333333;
+    --nav-hover-color: purple;
+    --footer-background: #e0e4e8; /* Brighter gray-blue */
+    --footer-text-color: #333333;
+    --sidebar-background: rgba(125, 178, 224, 0.2);
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --doctor-card-bg: #ffffff;
+    --section-bg: #2c2448;
+   /* --section-bg: #020e1b;*/
+    --hover-scale: scale(1.1);
+    --hover-scale-small: scale(1.05);
+}
+
+/* Section Styles */
+.section1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.section2 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--section-bg);
+    box-shadow: 0 2px 5px var(--box-shadow);
+}
+
+/* Doctor Card Styles */
+.doctor-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--box-shadow);
+    background-color: var(--doctor-card-bg);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: var(--hover-scale);
+}
+
+.doctor-card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.doctor-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.doctor-card p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin: 5px 0;
+}
+
+/* Headings */
+.head1 {
+   
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: -5px;
+}
+
+.heading1 {
+   
+    
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+    .section1, .section2 {
+        padding: 40px;
+    }
+
+    .doctor-card {
+        max-width: 350px;
+        margin: 25px auto;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .section2 {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section2 {
+        padding: 20px;
+    }
+
+    .doctor-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section1, .section2 {
+        padding: 15px;
+    }
+
+
+    .doctor-card {
+        padding: 15px;
+    }
+
+    .doctor-card:hover {
+        transform: var(--hover-scale-small);
+    }
+
+    .footer-social .social-link {
+        font-size: 1rem;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
