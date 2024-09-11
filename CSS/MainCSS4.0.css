@@ -176,8 +176,9 @@ nav a:hover {
     height: 100vh;
     width: 70%;
     z-index: 999;
+    font-weight: 500;
     background-color: var(--sidebar-background);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(100px);
     box-shadow: -10px 0 10px var(--box-shadow);
     display: none;
     flex-direction: column;
