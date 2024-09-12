@@ -24,6 +24,21 @@
     padding: 20px;
 }
 
+.video_contact{
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    background-color: var(--box-background);
+    border-radius: 8px;
+    padding: 0px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    
+    
+   
+
+
+}
 /* Heading styling */
 h1 {
     text-align: center;
