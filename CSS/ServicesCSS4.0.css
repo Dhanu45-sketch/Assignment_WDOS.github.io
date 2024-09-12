@@ -3,6 +3,7 @@
     --background-color-dark: #1f4172; /* Dark pastel blue */
     --header-background: aliceblue;
     --text-color: #333333;
+    --btn-color: #007bff;
     --primary-btn-bg: #007bff;
     --nav-hover-color: purple;
     --footer-background: #e0e4e8; /*  gray*/
@@ -39,6 +40,34 @@ footer {
     box-shadow: 0 2px 5px var(--box-shadow);
     text-align: center;
 }
+
+
+#h2b{
+    background-color: transparent;
+    margin-bottom: 10px;
+    box-shadow: none;
+    padding: 0;
+}
+
+.btn_appointment {
+        margin-top: 15px;
+        background-color: var(--btn-color);
+        color: #ffffff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        transition: background-color 0.3s ease;
+    }
+    
+.btn_appointment:hover {
+        transform: scale(1.1);
+        background-color: var(--nav-hover-color);
+    }
+    
+
+
 
 /* Base styles for services page */
 .service-card, .imgcard {
@@ -127,6 +156,7 @@ footer {
     border-radius: 10px;
     object-fit: cover;
 }
+
 
 /* Adjustments for responsiveness */
 @media (max-width: 1024px) {
@@ -273,6 +303,7 @@ h1 {
     }
 
     .imgcard {
+        display: none;
         border-color: transparent;
         padding: 0;
         background-color: transparent;
