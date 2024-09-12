@@ -1,11 +1,11 @@
 /* Define all colors in :root */
 :root {
     --background-color-light: #f0f4f8;
-    --background-color-dark: #1f4172; /* Light pastel blue */
+    --background-color-dark: #1f4172; /* Dark pastel blue */
     --header-background: aliceblue;
     --text-color: #333333;
     --nav-hover-color: purple;
-    --footer-background: #e0e4e8; /* Brighter gray-blue */
+    --footer-background: #e0e4e8; /* Brighter gray */
     --footer-text-color: #333333;
     --sidebar-background: rgba(125, 178, 224, 0.2);
     --box-shadow: rgba(0, 0, 0, 0.1);
@@ -20,6 +20,8 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, main content, footer */
 }
+
+/* header and nav bar */
 
 .header {
    

@@ -1,11 +1,11 @@
 /* Define all colors in :root */
 :root {
     --background-color-light: #f0f4f8;
-    --background-color-dark: #1f4172; /* Light pastel blue */
+    --background-color-dark: #1f4172; /* Dark pastel blue */
     --header-background: aliceblue;
     --text-color: #333333;
     --nav-hover-color: purple;
-    --footer-background: #e0e4e8; /* Brighter gray-blue */
+    --footer-background: #e0e4e8; /* Brighter gray */
     --footer-text-color: #333333;
     --sidebar-background: rgba(125, 178, 224, 0.2);
     --box-shadow: rgba(0, 0, 0, 0.1);
@@ -60,6 +60,7 @@ body{
     z-index: 5;
 }
 
+/* Font section */
 h1 {
     font-size: 22px;
 }
@@ -68,6 +69,8 @@ p {
     font-size: 18px;
 }
 
+
+/* Button  */
 .button2 {
     display: flex;
     justify-content: center;
@@ -89,6 +92,7 @@ p {
     
 }
 
+/* section 1 banner center section*/
 .banner_text {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -135,7 +139,7 @@ p {
     width: auto;
 }
 
-/* Section 2 */
+/* Section 2,4 */
 .section2, .section4 {
     justify-content: space-between;
 }
@@ -158,7 +162,7 @@ p {
     border-radius: 7px;
 }
 
-/* Section 7 and Contact Info */
+/* Section 5 and Contact Info */
 .section7div, .contact_info {
     background-color: var(--emergency-bg);
     
@@ -270,7 +274,7 @@ p {
     }
 
     .doctor_extra {
-        display: none;
+        display: none; /* Cards not visible in mobile */
     }
 }
 
