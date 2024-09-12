@@ -3,6 +3,7 @@
     --background-color-dark: #1f4172; /* Light pastel blue */
     --header-background: aliceblue;
     --text-color: #333333;
+    --primary-btn-bg: #007bff;
     --nav-hover-color: purple;
     --footer-background: #e0e4e8; /* Brighter gray-blue */
     --footer-text-color: #333333;
@@ -74,7 +75,7 @@ form {
 }
 
 .form-group button {
-    background-color: #2980b9;
+    background-color: var(--primary-btn-bg);
     color: #ffffff;
     padding: 15px 20px;
     border: none;
@@ -88,6 +89,7 @@ form {
     transform: scale(1.1);
     background-color: var(--nav-hover-color); /* Using the hover color variable */
 }
+
 
 /* Media Queries */
 @media (min-width: 1024px) {
@@ -116,5 +118,8 @@ form {
     .form-group button {
         font-size: 1rem;
         padding: 10px 20px;
+    }
+    .img_booking{
+        display: none;
     }
 }
