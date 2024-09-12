@@ -61,53 +61,95 @@
 
     <main class="booking-page">
         <div class="booking-form">
-
-            <h2>Book an Appointment</h2>
-            <div>
+            <form action="submit_appointment.php" method="POST">
+                <div>
+                  <h2>Book an Appointment</h2>
+                </div>
+                <div>
                 <img src="./Images/wallpaperflare.com_wallpaper (40).webp" alt="" class="img_booking">
                 
-            </div>
-            <br>
+                </div>
+                 <br>
             
             
-            <p>Please fill out the form below to book an appointment with one of our doctors.</p>
-            <br>
-            <br>
-            <form action="submit_appointment.php" method="POST">
+                <p>Please fill out the form below to book an appointment with one of our doctors.</p>
+                <br>
+                <br>
+       
+          
+            
+
+               
+
+                
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+                <label for="Specialization">Specialization</label>
+                   <select id="Specialization" name="Specialization" required>
+                     <option value="">-- Select Specialization --</option>
+                     <option value="Cardiologist">Cardiologist</option>
+                     <option value="Neurologist">Neurologist</option>
+                     <option value="Pediatrician">Pediatrician</option>
+                      <!-- Add more options as needed -->
+                   </select>
+                </div>   
+            
+
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                  <label for="doctor">Select Doctor</label>
+                  <select id="doctor" name="doctor" required>
+                       <option value="">-- Select Doctor --</option>
+                       <option value="dr_smith">Dr. Serina Philips</option>
+                       <option value="dr_jones">Dr. Jayanthi Munaweera</option>
+                       <option value="dr_brown">Dr.Oshan Hettige</option>
+                         <!-- Add more options as needed -->
+                   </select>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="doctor">Select Doctor</label>
-                    <select id="doctor" name="doctor" required>
-                        <option value="">-- Select Doctor --</option>
-                        <option value="dr_smith">Dr. John Smith</option>
-                        <option value="dr_jones">Dr. Emily Jones</option>
-                        <option value="dr_brown">Dr. Michael Brown</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
+
                 <div class="form-group">
                     <label for="date">Preferred Date</label>
                     <input type="date" id="date" name="date" required>
                 </div>
+
                 <div class="form-group">
                     <label for="time">Preferred Time</label>
                     <input type="time" id="time" name="time" required>
                 </div>
+
+                <br>
+                
+                <div class="form-group">
+                    <button> Search</button>
+                </div>
+
+                <br>
+                
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="NIC Number">NIC Number</label>
+                    <input type="tel" id="NIC_Number" name="NIC Number" required>
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+          
                 <div class="form-group">
                     <label for="message">Additional Information</label>
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
+
                 <div class="form-group">
                     <button type="submit">Book Appointment</button>
                 </div>
