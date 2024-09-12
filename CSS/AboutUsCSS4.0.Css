@@ -125,7 +125,7 @@ table {
 }
 
 th {
-    background-color: #9aa4b3; /* Header color */
+    background-color: var(--nav-hover-color); /* Header color */
     color: #ffffff;
     padding: 15px;
     text-align: left;
@@ -186,6 +186,10 @@ tr:hover {
 
     .branch-contact {
         display: none;
+    }
+    .small_heading{
+        background-color: var(--btn-hover-color);
+        color: var(--background-color-light);
     }
 
     .about_image {
